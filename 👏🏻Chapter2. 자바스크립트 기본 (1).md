@@ -133,10 +133,54 @@ typeof alert // "function"  (3) '함수형'이라는 것은 따로 없지만, �
 
 ### 📌비교 연산자
 
-> [**코어 자바스크립트 | 비교연산자**](https://ko.javascript.info/comparison)
-
 - 비교하려는 값의 자료형이 다르면 자바스크립트는 이 값들을 숫자형으로 바꿉니다.
+
   - `alert( '2' > 1 ); // true, 문자열 '2'가 숫자 2로 변환된 후 비교가 진행됩니다.`
+  - 그러나 둘 다 문자열이면 일반적인 '사전순'으로 비교합니다. `alert("2" > "12"); // true`
+
+- 이 때문에 종종 흥미로운 상황이 생깁니다.
+
+	```javascript
+  let a = 0;
+  alert( Boolean(a) ); // false
+  
+  let b = "0";
+  alert( Boolean(b) ); // true => 따로따로 보면 각각 true와 false입니다.
+  
+  alert(a == b); // true! 
+  // 왜냐하면 (동등비교연산자)==는 b("0")를 0으로 형변환합니다.
+  // 그러나 Boolean("0")은 "0"을 비어있지 않은 문자열로 처리합니다.
+  ```
+  
+- 이를 방지하는 방법은 `===`를 사용하는 것! 
+  **일치 연산자(strict equality operator) `===`를 사용하면 형 변환 없이 값을 비교할 수 있습니다.**
+
+- `null`과 `undefined`도 마찬가지로 `==`로 비교하면 `true`이지만, `===`로 비교하면 두 값의 자료형이 다르기 때문에 `false`입니다.
+  단, `null`과 `undefined`는 자기들끼리만 잘 어울립니다. 
+  
+  ```javascript
+  alert( null === undefined ); // false
+  alert( null == undefined ); // true
+  ```
+
+
+- `null` vs `0`
+
+  ```javascript
+  alert( null > 0 );  // (1) false
+  alert( null == 0 ); // (2) false : ==(동등연산자)는 피연산자가 undefined/null일 때 형변환하지 않습니다. 양쪽이 "둘 다" undefined/null이면 true를 반환하지만, 한쪽만 undefined/null이면 false를 반환합니다.
+  alert( null >= 0 ); // (3) true : null이 숫자형 0으로 변환됩니다.
+  ```
+  
+
+- `undefined`는 (`null`을 제외한) 다른 값과 비교해서는 안 됩니다. 항상 `false`를 반환합니다.
+
+
+
+#### 🔍그래서 중요한 것은...
+
+- 일치 연산자 `===`를 제외한 비교 연산자의 피연산자에 `undefined`나 `null`이 오지 않도록 특별히 주의하시기 바랍니다.
+- 또한, `undefined`나 `null`이 될 가능성이 있는 변수가 `<`, `>`, `<=`, `>=`의 피연산자가 되지 않도록 주의하시기 바랍니다. 명확한 의도를 갖고 있지 않은 이상 말이죠. 만약 변수가 `undefined`나 `null`이 될 가능성이 있다고 판단되면, 이를 따로 처리하는 코드를 추가하시기 바랍니다.
 
 ---
 
