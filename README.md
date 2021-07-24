@@ -16,9 +16,9 @@
 ### 🔍 Part1. 코어 자바스크립트
 |챕터|내용|정리|날짜|발표|비고|
 |---|---|---|---|---|---|
-|2|**자바스크립트 기본**|[**자바스크립트 기본 (1)**](https://github.com/eunseo-kim/modern-javascript-study/blob/main/Part1.%20%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Chapter4.%20%EA%B0%9D%EC%B2%B4%20%EA%B8%B0%EB%B3%B8%20(1).md)<br>[**자바스크립트 기본 (2)**](https://github.com/eunseo-kim/modern-javascript-study/blob/main/Part1.%20%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Chapter2.%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8%20(2).md)|7.18~7.24|-|-|
+|2|**자바스크립트 기본**|[**자바스크립트 기본 (1)**](https://github.com/eunseo-kim/modern-javascript-study/blob/main/Part1.%20%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Chapter2.%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8%20(1).md)<br>[**자바스크립트 기본 (2)**](https://github.com/eunseo-kim/modern-javascript-study/blob/main/Part1.%20%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Chapter2.%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EA%B8%B0%EB%B3%B8%20(2).md)|7.18~7.24|-|-|
 |3|**코드 품질**|-|7.18~7.24|-|-|
-|4|**객체: 기본**|[**객체 기본 (1)**](https://github.com/eunseo-kim/modern-javascript-study/blob/main/Part1.%20%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Chapter4.%20%EA%B0%9D%EC%B2%B4%20%EA%B8%B0%EB%B3%B8%20(1).md)<br>[**객체 기본 (2)**]()|7.18~7.24|-|-|
+|4|**객체: 기본**|[**객체 기본 (1)**](https://github.com/eunseo-kim/modern-javascript-study/blob/main/Part1.%20%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Chapter4.%20%EA%B0%9D%EC%B2%B4%20%EA%B8%B0%EB%B3%B8%20(1).md)<br>[**객체 기본 (2)**](https://github.com/eunseo-kim/modern-javascript-study/blob/main/Part1.%20%EC%BD%94%EC%96%B4%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Chapter4.%20%EA%B0%9D%EC%B2%B4%20%EA%B8%B0%EB%B3%B8%20(2).md)|7.18~7.24|-|-|
 |5|**자료구조와 자료형**|-|7.18~7.24|-|-|
 |6|**함수 심화학습**|-|7.25~7.31|-|-|
 |7|**객체 프로퍼티 설정**|-|7.25~7.31|✔️|-|
