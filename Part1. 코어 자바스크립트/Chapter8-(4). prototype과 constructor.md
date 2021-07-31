@@ -8,7 +8,7 @@
 
   이렇게 (생성자) 함수를 만들면 프로토타입 객체와 함께 `prototype` 프로퍼티와 `constructor` 프로퍼티가 생성된다.
 
-   <img src="C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210730023640821.png" alt="image-20210730023640821" style="zoom: 50%;" />
+   ![image](https://user-images.githubusercontent.com/67737432/127734623-df1c3f40-944b-4aed-8b83-f7b5a916aaf1.png)
 
   
 
@@ -26,7 +26,7 @@
   console.log(admin.constructor === User);	// true (프로토타입을 거쳐서 접근)
   ```
   
-   <img src="C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210731154635076.png" alt="image-20210731154635076" style="zoom:50%;" />
+    ![image](https://user-images.githubusercontent.com/67737432/127734640-6368a255-39b1-4d16-834b-99c4642cb34a.png) 
 
 
 
@@ -60,7 +60,8 @@
   - **이제는 `admin.constructor === User`이 성립하지 않게 되었다. 왜 그럴까?**
 
   - 위의 상황을 그림으로 표현해보면 다음과 같다.
-    <img src="C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210731155956654.png" alt="image-20210731155956654" style="zoom:50%;" />
+  
+    ![image](https://user-images.githubusercontent.com/67737432/127734649-f1ac3aeb-2f34-4188-9268-ac6e45faeb7d.png)
 
   
 
