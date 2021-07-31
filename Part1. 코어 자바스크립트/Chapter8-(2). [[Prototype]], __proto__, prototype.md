@@ -16,7 +16,9 @@
   > : 어떤 객체의 **상위(부모) 객체의 역할을 하는 객체**로서, 다른 객체에 공유 프로퍼티(메서드 포함)을 제공한다.
 
 - 정리하면 ......
-   ![image-20210731162945750](C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210731162945750.png)
+
+  ![image](https://user-images.githubusercontent.com/67737432/127733123-10f32488-7819-4552-815d-00bea0df4108.png)
+
 
 ---
 
@@ -29,7 +31,7 @@
 - `__proto__`는 `[[Prototype]]`의 getter(획득자)이자 setter(설정자) 이다.
 
 
-  ![image-20210731163024404](C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210731163024404.png)
+    ![image](https://user-images.githubusercontent.com/67737432/127733137-0fe3a01c-7839-4682-a702-dfe2e0f12aed.png)
 
   
 
@@ -118,22 +120,24 @@
 
 1. `User` 이라는 생성자 함수를 만들면 `User.prototype` 이라는 프로토타입 객체가 함께 생성된다.
    
-   ![](C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210730015357855.png)
+   ![image](https://user-images.githubusercontent.com/67737432/127734418-a12b35fe-5972-4ef8-b791-14259ea90c78.png)
    
    
    
 2. `User` 생성자 함수에는 `prototype` 이라는 프로퍼티가 존재하고, `User.prototype` 프로토타입 객체에는 `constructor` 이라는 프로퍼티가 존재한다. `prototype` 프로퍼티는 프로토타입 객체를 가리킨다. `constructor` 프로퍼티는 자신을 참조하는 생성자 함수를 가리킨다.
-   ![](C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210730015321695.png)
+  
+    ![image](https://user-images.githubusercontent.com/67737432/127734448-2990b459-c568-4e72-82a5-ac8dabe3732e.png)
 
    
 
 3. `User.prototype`에 메소드나 프로퍼티를 새로 추가할 수 있다. 프로토타입 객체에 추가된 메소드나 프로퍼티는 상속된다.
 
-   ![](C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210730015505068.png)
+    ![image](https://user-images.githubusercontent.com/67737432/127734480-7e1b9814-17bb-4137-93c3-7550d801a6d0.png)
    
 
 4. `User` 생성자 함수로 새로운 객체 `admin`을 추가하면, `admin` 에서는 `__proto__`라는 접근자 프로퍼티를 통해 `User.prototype`에 접근할 수 있다. 즉,  `__proto__` 프로퍼티도 `User.prototype` 프로토타입 객체를 가리킨다. 
-   ![](C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210731024714385.png)
+
+    ![image](https://user-images.githubusercontent.com/67737432/127734517-d443e83c-8609-45a5-b359-486c396d4413.png)
 
    
 
