@@ -32,7 +32,9 @@
 - 최종적으로 객체와 프로토타입은 이런 상태가 된 것이다!!
 
   프로토타입(animal)에 없는 `isSleeping`을 불렀으니 당연히 undefined가 나온다!
-  <img src="C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210730011605813.png" alt="image-20210730011605813" style="zoom:50%;" />
+
+    ![image](https://user-images.githubusercontent.com/67737432/127734549-b6c803d6-f8d1-489b-9d54-c7980ce48ad9.png)
+
 
 
 
@@ -81,7 +83,7 @@ for (let prop in rabbit) {
 >  자바스크립트는 객체의 프로퍼티(메서드 포함)에 접근하려고 할 때 해당 객체에 접근하려는 프로퍼티가 없다면, `[[Prototype]]` 참조를 따라 자신의 부모 역할을 하는 프로토타입의 프로퍼티를 순차적으로 검색한다.
 > 이를 **프로토타입 체인**이라고 한다! 프로토타입 체인은 자바스크립트가 객체 지향 프로그래밍의 상속을 구현하는 메커니즘이다.
 
- <img src="C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210730021738549.png" alt="image-20210730021738549" style="zoom:50%;" />
+![image](https://user-images.githubusercontent.com/67737432/127734567-9621e43a-15d4-426e-a26d-2c64e91612b4.png)
 
 - **프로토타입 체인의 최상위에 위치하는 객체는 언제나 `Object.prototype`** 이다. 따라서 이를 **프로토타입 체인의 종점**이라고 한다.
 
