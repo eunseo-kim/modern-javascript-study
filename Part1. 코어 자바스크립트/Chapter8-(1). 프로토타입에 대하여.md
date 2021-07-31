@@ -30,12 +30,15 @@
 - 위의 경우에서 User 생성자 함수는 **인스턴스를 생성할 때마다 sayHi 메서드를 중복 생성하고 모든 인스턴스가 중복 소유**하고 있다!
 
 - 그림으로 나타내보면...
-  
+ 
+  ![image](https://user-images.githubusercontent.com/67737432/127733019-caed9fb7-e9d4-4742-a534-bad90ad543a4.png)
 
 ---
 
 - 그런데 우리가 바라는 모습은...
-  ![image-20210731162529261](C:\Users\eunse\AppData\Roaming\Typora\typora-user-images\image-20210731162529261.png)
+
+  ![image](https://user-images.githubusercontent.com/67737432/127733095-6b1389c2-2db9-46b5-94d5-e6c11cb6ed8f.png)
+
 
 ---
 
