@@ -59,7 +59,7 @@
 
 - 즉, 그림으로 나타내보면...
 
-      ![image](https://user-images.githubusercontent.com/67737432/128357707-a2675dc1-a4c7-4a82-9109-b2ba745b434c.png)
+  ![image](https://user-images.githubusercontent.com/67737432/128357707-a2675dc1-a4c7-4a82-9109-b2ba745b434c.png)
 
 ---
 
