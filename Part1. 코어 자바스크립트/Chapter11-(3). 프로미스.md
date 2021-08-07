@@ -158,15 +158,16 @@
 - 콜백으로 작성한 `loadScript`
 
 	```js
-function loadScript(src, callback) {
-    let script = document.createElement("script");
-    script.src = src;
+	function loadScript(src, callback) {
+	    let script = document.createElement("script");
+	    script.src = src;
 
-    script.onload = () => callback(null, script);
-    script.onerror = () => callback(new Error("error!"), script);
+	    script.onload = () => callback(null, script);
+	    script.onerror = () => callback(new Error("error!"), script);
 
-    document.head.append(script);
-}
+	    document.head.append(script);
+	}
+
 
 - 프로미스로 바꾸기
 
