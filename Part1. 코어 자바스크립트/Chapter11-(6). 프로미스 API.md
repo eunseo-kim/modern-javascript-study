@@ -74,8 +74,7 @@
     ```
 
   >  🌼병렬적으로 실행한 결과
-  >
-  >    -  ![image](https://user-images.githubusercontent.com/67737432/128544969-0a71c967-f124-44b6-bf9b-ee47c37c05b8.png)
+  >  ![image](https://user-images.githubusercontent.com/67737432/128544969-0a71c967-f124-44b6-bf9b-ee47c37c05b8.png)
 
 - 중요한 점은, **`Promise.all`에 전달되는 프라미스 중 하나라도 거부되면, **
   **`Promise.all`이 반환하는 프라미스는 에러와 함께 바로 거부된다는 점**이다!
@@ -90,8 +89,7 @@
 
   - ✋🏻그러나 **프로미스에는 `취소`라는 개념이 없어서 에러를 출력해도 마지막 프로미스까지의 호출은 그대로** 일어난다.
     **그러나 그 결과는 무시된다.**
-  - 즉, 위의 경우에서는 `20초`에 `Error: 에러 발생!`이 출력되지만, 실제로 **모든 호출이 끝나는 시간은 그대로 `30초`**이다. 
-  -     ![image](https://user-images.githubusercontent.com/67737432/128547595-999f0598-b13c-456d-8886-6106d0267fdf.png)
+  - 즉, 위의 경우에서는 `10초`에 `Error: 에러 발생!`이 출력되지만, 실제로 **모든 호출이 끝나는 시간은 그대로 `30초`**이다. ![image](https://user-images.githubusercontent.com/67737432/128547595-999f0598-b13c-456d-8886-6106d0267fdf.png)
 
 ---
 
@@ -162,7 +160,7 @@ resolvedPromise.then(console.log);	// [1, 2, 3]
 // resolvedPromise는 fulfilled 상태이므로 then은 [1, 2, 3]을 출력한다.
 ```
 
--   ![image](https://user-images.githubusercontent.com/67737432/128550263-9940f527-631b-45e7-90ef-b7012e91b8c7.png)
+​	![image](https://user-images.githubusercontent.com/67737432/128550263-9940f527-631b-45e7-90ef-b7012e91b8c7.png)
 
 ### 3. Promise.reject
 
@@ -173,7 +171,7 @@ const rejectedPromise = Promise.reject(new Error('Error!'));
 rejectedPromise.catch(console.log);	// Error: Error!
 ```
 
--   ![image](https://user-images.githubusercontent.com/67737432/128550478-8f04a35c-857c-44c2-bee0-32cc793420dc.png)
+​	![image](https://user-images.githubusercontent.com/67737432/128550478-8f04a35c-857c-44c2-bee0-32cc793420dc.png)
 
 ---
 

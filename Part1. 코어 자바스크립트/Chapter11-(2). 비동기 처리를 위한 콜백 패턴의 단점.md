@@ -18,7 +18,7 @@
 
   > 🙂 참고로... 이런 결과를 가져오는 코드이다.
   >
-    ![image](https://user-images.githubusercontent.com/67737432/128356631-0a1e2d47-27ba-4eda-a81c-27703058e2ca.png)
+  >     ![image](https://user-images.githubusercontent.com/67737432/128356631-0a1e2d47-27ba-4eda-a81c-27703058e2ca.png)
 
 - 이렇게 읽어온 `my/script.js` 에 대하여, `script.js`를 다음과 같이 정의해보았다.
 
@@ -59,7 +59,7 @@
 
 - 즉, 그림으로 나타내보면...
 
- ![image](https://user-images.githubusercontent.com/67737432/128357707-a2675dc1-a4c7-4a82-9109-b2ba745b434c.png)
+  ![image](https://user-images.githubusercontent.com/67737432/128357707-a2675dc1-a4c7-4a82-9109-b2ba745b434c.png)
 
 ---
 

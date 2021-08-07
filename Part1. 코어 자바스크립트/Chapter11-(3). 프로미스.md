@@ -10,9 +10,7 @@
 - 즉, 지금까지의 내용으로 프로미스 객체를 만들어보면 다음과 같다👏🏻👏🏻
 
   ```js
-  let promise = new Promise(function(resolve, reject) {
-      //...
-  })
+  let promise = new Promise(function(resolve, reject) {...})
   ```
 
 ---
@@ -25,7 +23,7 @@
 > `resolve`, `reject`는 **자바스크립트에서 자체적으로 제공하는 함수**이다.
 > 그렇다면 자바스크립트에서 왜 `resolve`, `reject`를 자체적으로 제공하는지 알아보자.
 
-#### 📌먼저, **프로미스의 3가지 상태 정보**에 대해 알아야 한다!
+#### 📌먼저, **<u>프로미스의 3가지 상태 정보</u>**에 대해 알아야 한다!
 
 | 프로미스의 상태 정보 |                 의미                  |          상태 변경 조건          |
 | :------------------: | :-----------------------------------: | :------------------------------: |
@@ -159,8 +157,8 @@
 
 - 콜백으로 작성한 `loadScript`
 
-  ```js
-  function loadScript(src, callback) {
+	```js
+function loadScript(src, callback) {
     let script = document.createElement("script");
     script.src = src;
 
@@ -168,8 +166,7 @@
     script.onerror = () => callback(new Error("error!"), script);
 
     document.head.append(script);
-  }
-  ```
+}
 
 - 프로미스로 바꾸기
 
